@@ -74,6 +74,13 @@ public class User {
 
     @Override
     public String toString() {
+        if(this.borrowedBooks == null) {
+            return "User{" +
+                    "firstName='" + firstName + '\'' +
+                    ", lastName='" + lastName + '\'' +
+                    ", membershipNumber=" + membershipNumber +
+                    ", borrowedBooks= no books borrowed}";
+        }
         return "User{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

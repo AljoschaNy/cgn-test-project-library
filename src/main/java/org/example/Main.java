@@ -8,6 +8,8 @@ public class Main {
         User user2 = new User("Fabian", "Link");
         User user3 = new User("Iskren", "Radev");
 
+        System.out.println(user1);
+
 
     }
 }
