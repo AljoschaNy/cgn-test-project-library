@@ -18,4 +18,16 @@ class BookTest {
         //THEN
         assertEquals(expect,actual);
     }
+
+    @Test
+    void getTotalBooks_when2InstancesOfNovelBeenCreated_thenReturn2() {
+        //GIVEN
+        Novel book1 = new Novel("title1","author1","isbn1","genre1");
+        Novel book2 = new Novel("title1","author1","isbn1","genre2");
+        //WHEN
+        int actual = Book.getTotalBooks();
+        //THEN
+        assertTrue(actual == 2);
+    }
+
 }
