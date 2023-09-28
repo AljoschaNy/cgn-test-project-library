@@ -30,4 +30,15 @@ class BookTest {
         assertTrue(actual == 2);
     }
 
+    @Test
+    void getTotalBooks_when2InstancesOfSpecialistBookBeenCreated_thenReturn2() {
+        //GIVEN
+        SpecialistBook book1 = new SpecialistBook("title1","author1","isbn1","field1","junior");
+        SpecialistBook book2 = new SpecialistBook("title1","author1","isbn1","field2","junior");
+        //WHEN
+        int actual = Book.getTotalBooks();
+        //THEN
+        assertTrue(actual == 2);
+    }
+
 }
