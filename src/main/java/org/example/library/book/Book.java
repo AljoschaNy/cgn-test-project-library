@@ -24,6 +24,14 @@ public class Book {
         this.title = title;
     }
 
+    public static int getTotalBooks() {
+        return totalBooks;
+    }
+
+    public static void setTotalBooks(int totalBooks) {
+        Book.totalBooks = totalBooks;
+    }
+
     public String getAuthor() {
         return author;
     }
