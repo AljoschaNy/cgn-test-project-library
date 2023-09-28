@@ -1,6 +1,9 @@
 package org.example.library.book;
 
+import org.example.library.User;
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -40,5 +43,21 @@ class BookTest {
         //THEN
         assertTrue(actual == 2);
     }
+
+    /*@Test
+    void borrow_whenBorrowMethodIsExecutedOnInstanceOfBook_thenThisInstanceIsIncludedInUsersArrayBorrowedBooks() {
+        //GIVEN
+        Book book1 = new Book("title1","author1","isbn1");
+        Book book2 = new Book("title2","author1","isbn1");
+        User user = new User("Test", "User");
+        book1.borrow(user);
+        book2.borrow(user);
+
+        //WHEN
+        String[] actual = user.getBorrowedBooks();
+        //THEN
+        String[] expect = {"title1","title2"};
+        assertTrue(Arrays.equals(actual, expect));
+    }*/
 
 }

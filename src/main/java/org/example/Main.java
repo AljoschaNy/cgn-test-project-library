@@ -1,8 +1,11 @@
 package org.example;
 
 import org.example.library.User;
+import org.example.library.book.Book;
 import org.example.library.book.Novel;
 import org.example.library.book.SpecialistBook;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,7 +27,17 @@ public class Main {
                 "Fortgeschritten"
         );
 
-        System.out.println(book1);
-        System.out.println(specialBook1);
+        Book book12 = new Book("Der Steppenwolf", "Hermann Hesse", "978-3-596-90078-9");
+        Book book13 = new Book("Der ", "Hermann Hesse", "978-3-596-90078-9");
+        Book book14 = new Book("Im Westen nichts Neues", "Erich Maria Remarque", "978-3-499-22755-5");
+
+        book12.borrow(user1);
+        book13.borrow(user1);
+        book14.borrow(user1);
+        System.out.println(Arrays.toString(user1.getBorrowedBooks()));
+
+
+        //System.out.println(book1);
+        //System.out.println(specialBook1);
     }
 }
