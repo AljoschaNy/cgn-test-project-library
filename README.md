@@ -24,5 +24,5 @@ A simple system for managing books in a library. Users can search for, borrow, a
     - In the `User` class: A static method that returns the total number of registered users.
 
 4. **Interfaces:**
-    - `Borrowable` interface: Contains methods like `borrow()`, `returnBook()`, and `isBorrowed()`. The `Book`, `AcademicBook`, and `Novel` classes implement this interface.
+    - `Borrowable` interface: Contains methods like `borrow()`, `returnBook()`, and `isBorrowed()`. The `Book`, `SpecialistBook`, and `Novel` classes implement this interface.
     - `Searchable` interface: Contains a `search()` method, implemented by the `Library` class to search for books based on various criteria.
