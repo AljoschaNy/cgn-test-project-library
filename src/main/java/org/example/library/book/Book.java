@@ -1,4 +1,4 @@
-package org.example.library;
+package org.example.library.book;
 
 import java.util.Objects;
 

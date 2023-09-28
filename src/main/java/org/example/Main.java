@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.library.Book;
+import org.example.library.book.Book;
 import org.example.library.User;
 
 public class Main {
