@@ -44,7 +44,7 @@ class BookTest {
         assertTrue(actual == 2);
     }
 
-    /*@Test
+    @Test
     void borrow_whenBorrowMethodIsExecutedOnInstanceOfBook_thenThisInstanceIsIncludedInUsersArrayBorrowedBooks() {
         //GIVEN
         Book book1 = new Book("title1","author1","isbn1");
@@ -56,8 +56,8 @@ class BookTest {
         //WHEN
         String[] actual = user.getBorrowedBooks();
         //THEN
-        String[] expect = {"title1","title2"};
+        String[] expect = {"title1","title2",null,null,null};
         assertTrue(Arrays.equals(actual, expect));
-    }*/
+    }
 
 }
