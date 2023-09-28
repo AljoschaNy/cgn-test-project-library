@@ -16,7 +16,7 @@ A simple system for managing books in a library. Users can search for, borrow, a
     - `User` class: Contains user details like name, membership number, and borrowed books.
 
 2. **Inheritance:**
-    - `AcademicBook` class inherits from `Book`: A specialized book with additional properties like subject or difficulty level.
+    - `SpecialistBook` class inherits from `Book`: A specialized book with additional properties like subject or difficulty level.
     - `Novel` class inherits from `Book`: A specialized book with additional properties like genre or main characters.
 
 3. **Static Modifiers:**
